@@ -121,6 +121,13 @@
   }
   @media (prefers-reduced-motion: reduce){ .hero-blob{animation:none} }
   .hero-grid{position:relative;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:56px;align-items:center}
+  @media (max-width:900px){
+    .hero{padding:64px 0 48px}
+    .hero-grid{grid-template-columns:1fr;gap:36px}
+    .hero h1{max-width:none}
+    .hero p.lead{max-width:none}
+    .hero-art img{max-width:300px}
+  }
   .hero-copy{opacity:0;transform:translateY(16px);animation:rise .8s ease .05s forwards}
   .hero-art{opacity:0;transform:translateY(16px);animation:rise .8s ease .2s forwards;text-align:center}
   @keyframes rise{to{opacity:1;transform:translateY(0)}}
@@ -485,7 +492,7 @@
       <div>
         <h2>Vamos colocar sua tecnologia para trabalhar a favor do seu crescimento?</h2>
         <p class="lead">Preencha o formulário e nosso time entra em contato para agendar o seu diagnóstico gratuito.</p>
-        <a class="wa" href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20quero%20agendar%20um%20diagn%C3%B3stico%20com%20a%20Nimbo" target="_blank" rel="noopener">
+        <a class="wa" href="https://wa.me/555195541903?text=Ol%C3%A1%2C%20quero%20agendar%20um%20diagn%C3%B3stico%20com%20a%20Nimbo" target="_blank" rel="noopener">
           <svg viewBox="0 0 32 32"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.703 4.605 1.919 6.475L4 29l7.735-1.877A11.94 11.94 0 0 0 16.001 27C22.628 27 28 21.627 28 15S22.628 3 16.001 3zm6.965 16.485c-.297.833-1.464 1.53-2.397 1.727-.638.134-1.47.241-4.276-.917-3.588-1.487-5.897-5.14-6.077-5.378-.173-.238-1.457-1.938-1.457-3.696 0-1.759.902-2.622 1.222-2.983.297-.335.646-.418.862-.418.216 0 .432.002.622.011.2.009.468-.076.732.559.271.653.921 2.257.999 2.422.079.166.132.36.026.579-.106.219-.16.355-.315.545-.157.19-.328.424-.469.57-.157.163-.32.34-.138.667.183.328.812 1.34 1.744 2.171 1.198 1.068 2.207 1.399 2.535 1.556.328.157.52.132.71-.08.19-.213.815-.951 1.033-1.277.218-.328.436-.271.735-.163.3.108 1.9.897 2.226 1.06.328.163.545.244.626.38.08.137.08.789-.217 1.622z"/></svg>
           Prefere falar agora? Chame no WhatsApp
         </a>
@@ -508,7 +515,7 @@
           </div>
           <div class="field">
             <label for="telefone">WhatsApp / telefone</label>
-            <input id="telefone" name="telefone" type="tel" placeholder="(11) 90000-0000">
+            <input id="telefone" name="telefone" type="tel" placeholder="(51) 90000-0000">
           </div>
         </div>
         <div class="field">
@@ -541,10 +548,9 @@
       <div class="foot-col">
         <h4>Contato</h4>
         <ul>
-          <li><a href="mailto:contato@nimbo.com.br">contato@nimbo.com.br</a></li>
-          <li><a href="https://wa.me/5511999999999" target="_blank" rel="noopener">(11) 90000-0000</a></li>
-          <li><a href="#" onclick="return false">LinkedIn</a></li>
-          <li><a href="#" onclick="return false">Instagram</a></li>
+          <li><a href="mailto:nimbo.solucoes@gmail.com">nimbo.solucoes@gmail.com</a></li>
+          <li><a href="https://wa.me/555195541903" target="_blank" rel="noopener">(51) 9554-1903</a></li>
+          <li><a href="https://www.instagram.com/nimbo.solucoes" onclick="return false">Instagram</a></li>
         </ul>
       </div>
     </div>
@@ -588,7 +594,7 @@
       'WhatsApp/telefone: ' + telefone + '\n\n' +
       'Mensagem:\n' + mensagem
     );
-    window.location.href = 'mailto:contato@nimbo.com.br?subject=' + subject + '&body=' + body;
+    window.location.href = 'mailto:nimbo.solucoes@gmail.com?subject=' + subject + '&body=' + body;
     note.textContent = 'Abrindo seu aplicativo de e-mail para enviar a mensagem...';
   });
 </script>
